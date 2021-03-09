@@ -1,0 +1,39 @@
+{
+  "name": "gurps-game-aid",
+  "version": "0.8.13",
+  "description": "The Unofficial GURPS 4e Game Aid for Foundry VTT",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "webpack -c webpack.dev.js",
+    "build": "webpack -c webpack.prod.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjeffw/gurps.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mjeffw/gurps/issues"
+  },
+  "homepage": "https://github.com/mjeffw/gurps#readme",
+  "devDependencies": {
+    "@types/markdown-it": "^12.0.1",
+    "css-loader": "^5.0.2",
+    "foundry-vtt-types": "github:League-of-Foundry-Developers/foundry-vtt-types#foundry-0.7.9",
+    "sass": "^1.32.7",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.0.16",
+    "typescript": "^4.1.4",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "markdown-it": "^12.0.4"
+  }
+}
