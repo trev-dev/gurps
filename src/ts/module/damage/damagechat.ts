@@ -1,7 +1,7 @@
 'use strict'
 
-import { woundModifiers } from './damage-tables.js'
-import { d6ify, isNiceDiceEnabled, generateUniqueId } from '../../lib/utilities.js'
+import { woundModifiers } from './damage-tables'
+import { d6ify, isNiceDiceEnabled, generateUniqueId } from '../../lib/utilities'
 
 /**
  * DamageChat is responsible for parsing a damage roll and rendering the appropriate chat message for

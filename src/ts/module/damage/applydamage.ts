@@ -1,10 +1,10 @@
 'use strict'
 
-import { CompositeDamageCalculator } from './damagecalculator.js'
-import { isNiceDiceEnabled, parseFloatFrom, parseIntFrom, generateUniqueId } from '../../lib/utilities.js'
-import * as settings from '../../lib/miscellaneous-settings.js'
-import { digitsAndDecimalOnly, digitsOnly } from '../../lib/jquery-helper.js'
-import { GurpsActor } from '../actor.js'
+import { CompositeDamageCalculator } from './damagecalculator'
+import { isNiceDiceEnabled, parseFloatFrom, parseIntFrom, generateUniqueId } from '../../lib/utilities'
+import * as settings from '../../lib/miscellaneous-settings'
+import { digitsAndDecimalOnly, digitsOnly } from '../../lib/jquery-helper'
+import { GurpsActor } from '../actor'
 
 const standardDialogHeight = 800
 const simpleDialogHeight = 130

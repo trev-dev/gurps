@@ -7,14 +7,8 @@
   "compatibleCoreVersion": "0.7.9",
   "templateVersion": 2,
   "author": "Chris Normand/Nose66",
-  "esmodules": [
-    "module/gurps.js"
-  ],
-  "styles": [
-    "styles/simple.css",
-    "styles/css_boilerplate.css",
-    "styles/simplified.css",
-    "styles/npc-input.css"
+  "scripts": [
+    "scripts/gurps.bundle.js"
   ],
   "packs": [],
   "languages": [

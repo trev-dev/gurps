@@ -1,22 +1,22 @@
 // Import Modules
-import { parselink, parseForDamage } from '../lib/parselink.js'
+import { parselink, parseForDamage } from '../lib/parselink'
 
-import { GurpsActor } from './actor.js'
-import { GurpsItem } from './item.js'
-import { GurpsItemSheet } from './item-sheet.js'
+import { GurpsActor } from './actor'
+import { GurpsItem } from './item'
+import { GurpsItemSheet } from './item-sheet'
 import {
   GurpsActorCombatSheet,
   GurpsActorSheet,
   GurpsActorEditorSheet,
   GurpsActorSimplifiedSheet,
   GurpsActorNpcSheet,
-} from './actor-sheet.js'
-import { ModifierBucket } from './modifiers.js'
-import { ChangeLogWindow } from '../lib/change-log.js'
-import { SemanticVersion } from '../lib/semver.js'
-import { d6ify, recurselist, getAllActorsInActiveScene, atou, utoa } from '../lib/utilities.js'
-import { ThreeD6 } from '../lib/threed6.js'
-import { doRoll } from '../module/dierolls/dieroll.js'
+} from './actor-sheet'
+import { ModifierBucket } from './modifiers'
+import { ChangeLogWindow } from '../lib/change-log'
+import { SemanticVersion } from '../lib/semver'
+import { d6ify, recurselist, getAllActorsInActiveScene, atou, utoa } from '../lib/utilities'
+import { ThreeD6 } from '../lib/threed6'
+import { doRoll } from '../module/dierolls/dieroll'
 
 export const GURPS = {}
 window.GURPS = GURPS // Make GURPS global!
@@ -33,19 +33,19 @@ GURPS.BANNER = `   __ ____ _____ _____ _____ _____ ____ __
 `
 GURPS.LEGAL = `GURPS is a trademark of Steve Jackson Games, and its rules and art are copyrighted by Steve Jackson Games. All rights are reserved by Steve Jackson Games. This game aid is the original creation of Chris Normand/Nose66 and is released for free distribution, and not for resale, under the permissions granted by http://www.sjgames.com/general/online_policy.html`
 
-import GURPSRange from '../lib/ranges.js'
-import Initiative from '../lib/initiative.js'
-import HitFatPoints from '../lib/hitpoints.js'
-import DamageChat from './damage/damagechat.js'
+import GURPSRange from '../lib/ranges'
+import Initiative from '../lib/initiative'
+import HitFatPoints from '../lib/hitpoints'
+import DamageChat from './damage/damagechat'
 
-import handlebarHelpers from '../lib/moustachewax.js'
-import * as settings from '../lib/miscellaneous-settings.js'
-import jqueryHelpers from '../lib/jquery-helper.js'
-import { NpcInput } from '../lib/npc-input.js'
-import addChatHooks from './chat.js'
+import handlebarHelpers from '../lib/moustachewax'
+import * as settings from '../lib/miscellaneous-settings'
+import jqueryHelpers from '../lib/jquery-helper'
+import { NpcInput } from '../lib/npc-input'
+import addChatHooks from './chat'
 
-import GURPSConditionalInjury from './injury/foundry/conditional-injury.js'
-import { HitLocation } from './hitlocation/hitlocation.js'
+import GURPSConditionalInjury from './injury/foundry/conditional-injury'
+import { HitLocation } from './hitlocation/hitlocation'
 
 addChatHooks()
 jqueryHelpers()

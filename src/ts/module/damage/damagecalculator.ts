@@ -1,8 +1,8 @@
 'use strict'
 
-import * as Settings from '../../lib/miscellaneous-settings.js'
-import * as HitLocation from '../hitlocation/hitlocation.js'
-import * as DamageTables from './damage-tables.js'
+import * as Settings from '../../lib/miscellaneous-settings'
+import * as HitLocation from '../hitlocation/hitlocation'
+import * as DamageTables from './damage-tables'
 
 /* 
   Crippling injury:

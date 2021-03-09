@@ -1,9 +1,9 @@
 'use strict'
 
-import { extractP, xmlTextToJson, zeroFill, convertRollStringToArrayOfInt, recurselist } from '../lib/utilities.js'
-import ApplyDamageDialog from './damage/applydamage.js'
-import * as HitLocations from '../module/hitlocation/hitlocation.js'
-import * as settings from '../lib/miscellaneous-settings.js'
+import { extractP, xmlTextToJson, zeroFill, convertRollStringToArrayOfInt, recurselist } from '../lib/utilities'
+import ApplyDamageDialog from './damage/applydamage'
+import * as HitLocations from '../module/hitlocation/hitlocation'
+import * as settings from '../lib/miscellaneous-settings'
 
 export class GurpsActor extends Actor {
   /** @override */

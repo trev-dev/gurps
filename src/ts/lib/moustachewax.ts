@@ -1,8 +1,8 @@
 'use strict'
 
-import * as HitLocations from '../module/hitlocation/hitlocation.js'
-import { isArray, isEmpty } from './utilities.js'
-import * as settings from './miscellaneous-settings.js'
+import * as HitLocations from '../module/hitlocation/hitlocation'
+import { isArray, isEmpty } from './utilities'
+import * as settings from './miscellaneous-settings'
 
 /*
   Called Moustache Wax because it helps Handlebars. Get it?

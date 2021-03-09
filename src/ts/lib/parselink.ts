@@ -1,8 +1,8 @@
 'use strict'
 
-import { GURPS } from '../module/gurps.js'
-import { woundModifiers, damageTypeMap } from '../module/damage/damage-tables.js'
-import { d6ify, utoa, atou } from './utilities.js'
+import { GURPS } from '../module/gurps'
+import { woundModifiers, damageTypeMap } from '../module/damage/damage-tables'
+import { d6ify, utoa, atou } from './utilities'
 
 /* Here is where we do all the work to try to parse the text inbetween [ ].
  Supported formats:

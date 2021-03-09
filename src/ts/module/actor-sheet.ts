@@ -1,10 +1,10 @@
-import { GURPS } from './gurps.js'
-import { isNiceDiceEnabled, atou, utoa } from '../lib/utilities.js'
-import { Melee, Reaction, Ranged, Advantage, Skill, Spell, Equipment, Note } from './actor.js'
-import { HitLocation, hitlocationDictionary } from '../module/hitlocation/hitlocation.js'
-import { parselink } from '../lib/parselink.js'
-import * as CI from './injury/domain/ConditionalInjury.js'
-import * as settings from '../lib/miscellaneous-settings.js'
+import { GURPS } from './gurps'
+import { isNiceDiceEnabled, atou, utoa } from '../lib/utilities'
+import { Melee, Reaction, Ranged, Advantage, Skill, Spell, Equipment, Note } from './actor'
+import { HitLocation, hitlocationDictionary } from '../module/hitlocation/hitlocation'
+import { parselink } from '../lib/parselink'
+import * as CI from './injury/domain/ConditionalInjury'
+import * as settings from '../lib/miscellaneous-settings'
 
 /**
  * Extend the basic ActorSheet with some very simple modifications

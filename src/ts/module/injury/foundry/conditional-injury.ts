@@ -1,4 +1,4 @@
-import * as CI from "../domain/ConditionalInjury.js";
+import * as CI from '../domain/ConditionalInjury'
 
 const SYSTEM_NAME = 'gurps'
 const SETTING_NAME = 'useConditionalInjury'

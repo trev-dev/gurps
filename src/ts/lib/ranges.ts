@@ -1,6 +1,6 @@
 'use strict'
 
-import { displayMod } from './utilities.js'
+import { displayMod } from './utilities'
 
 export const SYSTEM_NAME = 'gurps'
 export const SETTING_NAME = 'rangeStrategy'

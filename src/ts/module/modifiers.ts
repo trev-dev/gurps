@@ -1,7 +1,7 @@
-import { displayMod, makeSelect, horiz } from '../lib/utilities.js'
-import { parselink } from '../lib/parselink.js'
-import * as Settings from '../lib/miscellaneous-settings.js'
-import * as HitLocations from '../module/hitlocation/hitlocation.js'
+import { displayMod, makeSelect, horiz } from '../lib/utilities'
+import { parselink } from '../lib/parselink'
+import * as Settings from '../lib/miscellaneous-settings'
+import * as HitLocations from '../module/hitlocation/hitlocation'
 
 Hooks.once('init', async function () {
   Hooks.on('closeModifierBucketEditor', (editor, element) => {

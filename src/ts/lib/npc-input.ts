@@ -1,10 +1,10 @@
 'use strict'
 
-import { GURPS } from '../module/gurps.js'
-import { GurpsActor, Advantage, Skill, Melee, Ranged, Encumbrance, Note, Equipment } from '../module/actor.js'
-import { digitsOnly } from './jquery-helper.js'
-import * as DamageTables from '../module/damage/damage-tables.js'
-import * as settings from '../lib/miscellaneous-settings.js'
+import { GURPS } from '../module/gurps'
+import { GurpsActor, Advantage, Skill, Melee, Ranged, Encumbrance, Note, Equipment } from '../module/actor'
+import { digitsOnly } from './jquery-helper'
+import * as DamageTables from '../module/damage/damage-tables'
+import * as settings from '../lib/miscellaneous-settings'
 
 
 Hooks.once('init', async function () {    
