@@ -1,11 +1,14 @@
-import "./markdown-it"
+import MarkdownIt from 'markdown-it';
 import { SemanticVersion } from "./semver";
 
 export class ChangeLogWindow extends FormApplication {
+  md: MarkdownIt
+
   constructor(lastVersion) {
     super({}, {});
     
     this.lastVersion = lastVersion;
+    this.md = new MarkdownIt()
   }
 
   static get defaultOptions() {
@@ -43,9 +46,8 @@ export class ChangeLogWindow extends FormApplication {
     return promise;
   }
 
-  _processChangelog(md) {
-    const MD = window.markdownit();
-		md = md.replace(/<a href=.*<\/a>/g,"");	// Remove HTML link from internal changelog display
+  _processChangelog(raw: string) {
+		const md = raw.replace(/<a href=.*<\/a>/g,"");	// Remove HTML link from internal changelog display
 
     // Cut off irrelevant changelog entries
     let lines = md.split(/[\n\r]/);
@@ -62,6 +64,6 @@ export class ChangeLogWindow extends FormApplication {
       }
     }
 
-    return MD.render(lines.join("\n"));
+    return this.md.render(lines.join("\n"));
   }
 }
